@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
+.presentation {
+	display: flex;
+	width: 100%;
+	min-height: 83vh;
+	align-items: center;
+}
+#pic{
+	
+}
+#recipe{
+	margin: auto;
+}
+#text{
+	padding: 0;
+}
+.intro-text, #dontent_bt{
+	margin-left: 10%;
+}
+ul{
+	padding-left: 15%;
+	padding-top: 10px;
+}
+.intro-text h1 {
+	font-size: 60px;
+	font-weight: 300;
+	font-family: 'Patua One', cursive;
+	align-content: center;
+	color: black;
+	margin-top: 0;
+}
+
+.intro-text p {
+	font-size: 30px;
+	color: black;
+	font-family: 'Crete Round', serif;
+	vertical-align: baseline;
+	margin: auto;
+}
+
+.plus:hover{
+	cursor: pointer;
+}
+
+

@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+.logo-container{
+    flex: 1;
+}
+.logo{
+    margin: 5px 0 5px 30px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo:hover{
+    text-decoration: underline;
+}
+nav{
+    flex: 1;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+    margin: 3px;
+}
+.nav-link{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(232, 127, 77,0.7);
+    min-width: 140px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12pt;
+}
+.dropdown-content a:hover {
+    background-color: #bd612f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.signup{
+	background: white;
+	text-decoration: none;
+	padding: 0.2em 0.5em 0.2em 0.5em ;
+	color: black;
+    font-size: 20px;
+    border-radius: 5em;
+    position: relative;
+    display: inline-block;
+}
+
+.signup:hover .dropdown-content {
+    display: block;
+}
+
+.cart{
+    justify-content: right;
+    margin: 0 30px 0 15px;
+}
+.cartimg{
+	width: 30px;
+    height: 30px;
+}
+
+.signup{
+	background: white;
+	text-decoration: none;
+	padding: 0.2em 0.5em 0.2em 0.5em ;
+	color: black;
+    font-size: 20px;
+    border-radius: 5em;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+#side{
+	color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#banner{
+	background-image: url("../img/oatmeal.jpg") ;
+    background-color: gray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+.presentation{
+    display: flex;
+    width: 100%;
+    min-height: 83vh;
+    align-items: center; 
+    background: rgba(0,0,0,0.6);
+}
+.login{
+	background-color: white;
+	width: 30em;
+	height: 28em;
+	align-items: center;
+	margin: auto;
+    border-radius: 2em;    
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container{
+	margin: auto;
+	padding: 10px;
+	height: 25em;
+}
+h1{
+	font-size: 20px;
+}
+
+input[type=text], input[type=password] {
+ 	width: 100%;
+  	padding: 15px;
+  	margin: 5px 0 22px 0;
+  	display: inline-block;
+  	border: none;
+  	background: #f1f1f1;
+}
+.cancelbtn,.loginbtn {
+  	padding: 5px 10px;
+  	width: 30%;
+  	background-color: #f44336;
+	border-style: none;
+	cursor: pointer;
+}
+.loginbtn {
+	background-color: #4CAF50
+}
+
+.conclusion{
+	background-color: #E87F4D;
+	width: 100%;
+	height: 7%;
+	position: absolute;
+	display: flex;
+}
