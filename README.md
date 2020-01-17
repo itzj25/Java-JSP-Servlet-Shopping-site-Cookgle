@@ -1,1 +1,1 @@
-# Bitcamp_1st-mini-project-Cookgle
+# Simple shopping website based on Java, JSP, and Servlet
